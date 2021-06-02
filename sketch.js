@@ -7,10 +7,10 @@ function setup() {
 }
 
 function draw() {
-  background(0);  
-  rotate(-90)
-
+  background(0);
+  
   translate(200,200)
+  rotate(-90)
 
   hr = hour()
   mn = minute()
@@ -42,7 +42,8 @@ function draw() {
   pop()
 
   point (0,0)
-
+noFill()
+strokeWeight(10)
   stroke("red")
   arc(0,0,300,300,0,scAngle)
 
